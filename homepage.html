@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>USA today</title>
+    <style>
+        @import "stylesheet.css";
+    </style>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: whitesmoke">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+<nav class="navbar bg-body-tertiary fixed-top" id="navbar" style="background-color: white">
+    <div>
+        <!-- Pulsante Hamburger  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="margin-left: 50px">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <img src="logo2.png" width="150px">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="What do you want to find?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <hr style="margin-left: 30px; margin-right: 30px">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">U.S.</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Election</a></li>
+                            <li><a class="dropdown-item" href="#">Politics</a></li>
+                            <li><a class="dropdown-item" href="#">Ukraine</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Sports</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">NBA</a></li>
+                            <li><a class="dropdown-item" href="#">SuperBowl</a></li>
+                            <li><a class="dropdown-item" href="#">Golfweek</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Entertainment</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">TV</a></li>
+                            <li><a class="dropdown-item" href="#">Music</a></li>
+                            <li><a class="dropdown-item" href="#">Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Life</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Wellness</a></li>
+                            <li><a class="dropdown-item" href="#">Beauty</a></li>
+                            <li><a class="dropdown-item" href="#">Problem solved</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Money</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Business</a></li>
+                            <li><a class="dropdown-item" href="#">Investing</a></li>
+                            <li><a class="dropdown-item" href="#">Finance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Tech</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Computer</a></li>
+                            <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                            <li><a class="dropdown-item" href="#">Silicon Valley</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Travel</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Destination</a></li>
+                            <li><a class="dropdown-item" href="#">Cruises</a></li>
+                            <li><a class="dropdown-item" href="#">Airline News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Opinion</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Columnist</a></li>
+                            <li><a class="dropdown-item" href="#">Voices</a></li>
+                            <li><a class="dropdown-item" href="#">Race in America</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropend-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">For Subscribers</b>
+                        </a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropend-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Weather</b>
+                        </a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropend-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Investigation</b>
+                        </a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropend-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Crosswords</b>
+                        </a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropend-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Humanfind</b>
+                        </a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropend-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Newsletter</b>
+                        </a>
+                    </li>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropend-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b style="font-size: larger; color: black; margin-left: 30px">Coupons</b>
+                        </a>
+                    </li>
+<br>
+                    <div style="font-size: small; margin-left: 30px"><b>MOST RECENT CONTENT</b></div>
+                    <br>
+                    <div style=" margin-left: 30px"><b>Nation</b>
+                        <p style="color: grey">Map of hummingbirds' spring migration shows every state they'll arrive</p>
+                    </div>
+                    <br>
+                    <div style=" margin-left: 30px"><b>Celebrities</b>
+                        <p style="color: grey">Ines Trocchia engaged! See NFL star Christian McCaffrey take a knee</p>
+                    </div>
+                    <br>
+                    <div style=" margin-left: 30px"><b>Money</b>
+                        <p style="color: grey">These grocery stores are closed on Easter Sunday</p>
+                    </div>
+
+
+
+                </ul>
+            </div>
+        </div>
+        <a class="navbar-brand"><img src="logo.png"></a>
+        <a class="navbarscritte" style="margin-right: 15px; margin-left: 25px; color: dimgrey"><b>Home</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>U.S</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Sports</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Entertainment</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Life</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Money</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Tech</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Travel</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Opinion</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>For Subscribers</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Weather</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Investigation</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Crosswords</b></a>
+        <a class="navbarscritte" style="margin-right: 15px; color: dimgrey"><b>Humankind</b></a>
+
+
+    </div>
+</nav>
+<br><br>
+
+<div style="background-color: white">
+<!-- Prima colonna  -->
+    <div class="container" style="background-color: white">
+        <div class="row">
+            <div class="col-lg-5" style="padding-left: 60px">
+                <div class="row">
+                <img src="img1.jpg" id=img1 width="550px">
+                </div>
+                <div class="row">
+                    <div class="col-lg-11" id="a1scritta">
+                <h4><b>Women were once banned from combat. Now they're on the front lines.</b></h4>
+                <h6> Ten years after the Pentagon repealed the ban on women in ground combat positions, female soldiers have risen in the ranks of frontline units.</h6>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3">
+                <div class="row" id="a2">
+                        <img src="img1a.jpg" width="100px">
+                </div>
+                <div class="row">
+                    <div class="col-lg-11" style="background-color: white; position: relative; top: -45px; padding: 20px" >
+                    <h6 id="a2scritta" style="background-color: white;font-size: large; padding-right: 30px"><b>
+                        'Lives tragically lost': 4 dead, multiple injuries in Dadeville, Alabama, shooting. Updates.
+                    </b></h6>
+                    </div>
+                </div>
+
+                <div class="row" id="a3">
+                    <img src="img1b.jpg" width="100px">
+                    </div>
+                <div class="row">
+                    <div class="col-lg-11" style="background-color: white; position: relative; top: -45px; padding: 20px">
+                    <h6 id="a3scritta" style="background-color: white; font-size: large; padding-right: 30px"><b>'Big shift' in cancer treatment? mRNA vaccine shows promise against melanoma</b></h6>
+                    </div>
+                </div>
+
+                </div>
+
+            <div class="col-lg-3" style="padding-left: 50px" id="a4">
+                <br>
+                <br><br>
+                <div class="row">
+                    <h6 style="font-size: large"><b>Arsenal held again as West Ham fight back for 2-2 draw</b></h6>
+                   <font color="#808080"> <h6><b>Soccer</b> | 2 hours ago</h6></font>
+                </div>
+                <br><br>
+                <div class="row">
+                    <h6 style="font-size: large"><b>The Phantom of the Opera is closing after 35 years on Broadway</b></h6>
+                    <font color="#808080"> <h6><b>Graphics</b> | 5 hours ago</h6></font>
+                </div>
+                <br><br>
+                <div class="row">
+                    <h6 style="font-weight: bold; font-size: large">Here's how these travelers save money on everyday expenses to travel</h6>
+                    <font color="#808080"> <h6><b>Travels</b> | 3 hours ago</h6></font>
+                </div>
+                <br><br>
+                <div class="row">
+                    <h6 style="font-size: large"><b>What is the healthiest bread? These options can be part of a healthy diet.</b></h6>
+                    <font color="#808080"> <h6><b>Life</b> | 4 hours ago</h6></font>
+                </div>
+            </div>
+        </div>
+    </div>
+        <br><br>
+    </div>
+
+
+
+</div>
+<br>
+<br>
+
+<!-- Seconda sezione-->
+<div class="container text-center">
+    <div class="row">
+        <!--Colonna sinistra-->
+        <div class="col-lg-4" style="background-color: white">
+
+            <div class="row" style="background-color: white; padding: 25px">
+                <br>
+                <img src="img7.jpg" width="50px">
+            </div>
+            <div class="row"><h6 style="color: grey">Advertisement</h6></div>
+            <div>
+                <a href="#">
+                <img src="adv1.jpg" style="width: 300px; padding-bottom: 20px">
+                </a>
+            </div>
+
+            <div class="row" style="background-color: whitesmoke">
+                <h4 align="left" style="padding-top: 15px"><qskyblue> <b>More stories</b></qskyblue></h4>
+            </div>
+
+
+            <div class="row" style="background-color: white">
+                <div class="col-7"><h6 style="text-align: left; padding-top: 15px; padding-left: 15px; font-size: large"><b>Atlanta man was 'eaten alive by insects and bed bugs' in jail, attorney says</b></h6>
+                    <h6 style="text-align: left; padding-bottom: 15px; padding-left: 15px; color: grey"><b>Nation</b></h6></div>
+                <div class="col-4"><img src="img2a.jpg" width="100px" style="margin-right: -35px; padding-top: 10px;padding-bottom: 10px"></div>
+            </div>
+
+            <div class="row" style="background-color: white">
+                <div class="col-7"><h6 style="text-align: left; padding-top: 15px; padding-left: 15px; font-size: large"><b>Trump, afraid of losing, begs DeSantis not to run for president</b></h6>
+                    <h6 style="text-align: left; padding-bottom: 15px; padding-left: 15px; color: grey"><b>Sport</b></h6></div>
+                <div class="col-4"><img src="img2b.jpg" width="100px" style="margin-right: -35px; padding-top: 10px;padding-bottom: 10px"></div>
+            </div>
+
+
+            <div class="row" style="background-color: white">
+                <div class="col-7"><h6 style="text-align: left; padding-top: 15px; padding-left: 15px; font-size: large"><b>Florida nurse stole fentanyl and replaced it with saline at surgery center</b></h6>
+                    <h6 style="text-align: left; padding-bottom: 15px; padding-left: 15px; color: grey"><b>Nation</b></h6></div>
+                <div class="col-4"><img src="img2c.jpeg" width="100px" style="margin-right: -35px; padding-top: 10px;padding-bottom: 10px"></div>
+            </div>
+
+
+            <div class="row" style="background-color: white">
+                <div class="col-7"><h6 style="text-align: left; padding-top: 15px; padding-left: 15px; font-size: large"><b>2 dads exchanged gunfire in Florida road rage fight; daughters shot</b></h6>
+                    <h6 style="text-align: left; padding-bottom: 15px; padding-left: 15px; color: grey"><b>Nation</b></h6></div>
+                <div class="col-4"><img src="img2d.jpg" width="100px" style="margin-right: -35px; padding-top: 10px;padding-bottom: 10px"></div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!--Colonna destra-->
+        <div class="col-lg-7" style="background-color: white;">
+            <br>
+            <div class="row">
+                <div class="col-6"><h6 style="text-align: left; font-size: large"><b>What happened this week? Take our news quiz.</b></h6>
+                    <h6 style="text-align: left; color: grey"> <b>News</b></h6></div>
+                <div class="col-6"><img src="img3a.jpg" width="227px"></div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-6"><h6 style="text-align: left; font-size: large"><b>Did Republicans hand Democrats major win with Tennessee Three vote?</b></h6>
+                    <h6 style="text-align: left; color: grey"> <b>Politics</b> | 2 hours ago</h6></div>
+                <div class="col-6"><img src="img5.jpg" width="227px"></div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-6"><h6 style="text-align: left; font-size: large"><b>Brennan, Graham blast Greene over defense of Pentagon leak suspect</b></h6>
+                    <h6 style="text-align: left; color: grey"> <b>Politics</b> | 7 hours ago</h6></div>
+                <div class="col-6"><img src="img3c.jpg" width="227px"></div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-6"><h6 style="text-align: left; font-size: large"><b>What is the healthiest bread? These options can be part of a healthy diet.</b></h6>
+                    <h6 style="text-align: left; color: grey"> <b>Life</b> | 3 hours ago</h6></div>
+                <div class="col-6"><img src="img3d.jpg" width="227px"></div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-6"><h6 style="text-align: left; font-size: large"><b>South Korea fires warning shots after North Korean boat crosses border</b></h6>
+                    <h6 style="text-align: left; color: grey"> <b>World</b> | 3 hours ago</h6></div>
+                <div class="col-6"><img src="img3e.jpg" width="227px"></div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-6"><h6 style="text-align: left; font-size: large"><b>Biden's push to sell electric vehicles: Can it be done?</b></h6>
+                    <h6 style="text-align: left; color: grey"> <b>Cars</b> | 7 hours ago</h6></div>
+                <div class="col-6"><img src="img3f.jpg" width="227px"></div>
+            </div>
+            <br>
+
+
+        </div>
+        </div>
+    </div>
+
+
+
+<br>
+
+<div><!--Terza sezione-->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-4" style="background-color: white">
+                <br>
+                <div class="row"><h6 style="color: grey">Advertisement</h6></div>
+
+                <div class="adv">
+                   <a href="#"> <img src="adv2.jpg" style="margin-top: 10px"></a>
+                </div>
+
+
+            </div>
+            <!--Colonna destra-->
+            <div class="col-lg-7" id="">
+
+
+                <!--Inizio sezione-->
+                <br>
+                <!--▬ News-->
+                <div class="row">
+                    <h4 align="left"><qblue><b> News</b></qblue></h4>
+                </div>
+                <!--Titolo principale-->
+                <div style="background-color: white">
+                <div class="row">
+                    <div class="col-lg-6"><img src="img4aa.jpg" align="left" class="imgc" width="570px"></div>
+
+                    <div class="col-lg-5">
+                        <div class="wrtc">
+                        <h3 align="left">
+                            <b>Daily Briefing: Alabama birthday party shooting kills four</b>
+                            <h5 align="left" style="color: grey"><b>News</b> | 2 hours sgo</h5>
+                        </h3>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!--Tre cards-->
+                <div class="row">
+                <div class="card-group" style="padding-left: 25px;padding-right: 25px">
+                    <div class="card">
+                        <a href="#" class="stretched-link"></a>
+                        <img src="img4a.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" align="left" style="padding: 5px"><b>Child care providers see surge of mental health issues in preschoolers</b></h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="stretched-link"></a>
+                        <img src="img4c.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" align="left" style="padding: 5px"><b>Puzzle solutions for Monday, April 17, 2023</b></h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="stretched-link"></a>
+                        <img src="img4b.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bids to ban CRT have come in every state but one, database shows</h5>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <br>
+                    <div class="row">
+                        <a href="#"><h5 style="color:grey">Show more <b style="color: black">News</b></h5></a>
+
+                    </div>
+                    <br>
+                </div>
+
+
+
+                <!--Inizio sezione 2-->
+                <br>
+                <!--▬ News-->
+                <div class="row">
+                    <h4 align="left"><qred><b> Sports</b></qred></h4>
+                </div>
+                <!--Titolo principale-->
+                <div style="background-color: white">
+                    <div class="row">
+                        <div class="col-lg-6"><img src="img4e.jpg" class="imgc" align="left" width="570px" style=""></div>
+
+                        <div class="col-lg-5">
+                            <div class="wrtc">
+                                <h3 align="left">
+                                    <b>Clippers in good shape if Leonard outplays Durant in first-round series</b>
+                                    <h5 align="left" style="color: grey"><b>NBA</b> | 4 hours ago</h5>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Tre cards-->
+                    <div class="row">
+                        <div class="card-group">
+                            <div class="card">
+                                <a href="#" class="stretched-link"></a>
+                                <img src="img4f.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" align="left" style="padding: 5px"><b>Knight scores hat trick as USA beats Canada for world championship gold</b></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="#" class="stretched-link"></a>
+                                <img src="img4g.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" align="left" style="padding: 5px"><b>All-state defensive back among those killed in Alabama mass shooting</b></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="#" class="stretched-link"></a>
+                                <img src="img4h.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" align="left" style="padding: 5px"><b>Heat upset No. 1 Bucks in Game 1 as Giannis injures back, Herro breaks hand</b></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <a href="#"><h5 style="color:grey">Show more <b style="color: black">Sports</b></h5></a>
+                    </div>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </div>
+<div class="footer">
+    <br><br><br><br><br>
+    <div class="row">
+    <h6 style="font-size: large">Help   ∙    Terms of Service     ∙    Subscription Terms & Conditions    ∙    Your California Privacy Rights/Privacy Policy    ∙    Privacy Policy    ∙    Site Map    ∙    Accessibility    ∙    Our Ethical Principles    ∙    <b>Manage Cookies</b></h6>
+</div>
+    <div class="row">
+        <img src="imgfooter.jpg" style="max-width: 350px; margin-top: 15px; margin-bottom: 15px">
+    </div>
+
+    <div class="row">
+        <h6 style="font-size: large">© Copyright Gannett 2023</h6>
+    </div>
+    <br>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
