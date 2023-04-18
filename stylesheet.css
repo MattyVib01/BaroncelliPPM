@@ -74,46 +74,64 @@ a:link {
 @media screen and (max-width: 992px) {
 
     #img1{
-        width: 800px;
+        width: 1200px;
         margin-top: 20px;
-        margin-left: -70px;
+        margin-left: -25px;
+        margin-bottom: 20px;
+        align-self: center;
+
+    }
+
+    #img2{
+        width: 350px;
+        margin-top: 20px;
+        margin-left: 30px;
         margin-bottom: 20px;
         align-self: center;
 
     }
 
     #a1scritta{
+        max-width: 300px;
         background-color: white;
-        margin-top: -125px;
-        margin-left: -35px;
+        margin-top: -75px;
+        margin-left: -25px;
         margin-bottom: 30px;
         padding-top: 10px;
         padding-bottom: 20px;
-        padding-right: 100px;
+        padding-right: 10px;
 
     }
 
-    #a2{
-        max-width: 450px;
-        padding-left: 15px;
-    }
     #a2scritta{
-        padding-right: 70px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 10px;
         margin-right: 50px;
         margin-left: 10px;
+        margin-top: -50px;
     }
 
-    #a3{
-        max-width: 450px;
-        padding-left: 15px;
+
+    #img3{
+        width: 350px;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        align-self: center;
+
     }
+
     #a3scritta{
-        padding-right: 70px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 10px;
         margin-right: 50px;
         margin-left: 10px;
+        margin-top: -50px;
     }
     #a4{
-        margin-left: -25px;
+        margin-left: -10px;
     }
 
     #b2{
