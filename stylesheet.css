@@ -26,14 +26,37 @@ qskyblue::before {
 }
 .navbarscritte{
     text-decoration: none;
+    cursor: pointer;
 }
 
 .card-group{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+
+/*Sezione More Stories*/
+.titleb1{
+    text-align: left; padding-top: 15px; padding-left: 15px; font-size: large
+}
+
+.subtitleb1{
+    text-align: left; padding-bottom: 15px; padding-left: 15px; color: grey
+}
+
+.imgb1{
+    margin-right: -35px; padding-top: 10px;padding-bottom: 10px
+}
+
+
+
 a:link {
     text-decoration: none;
+    color: initial;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 .footer{
     margin-left: 30px;
@@ -79,14 +102,6 @@ a:link {
 
 
 
-    #img2{
-        width: 350px;
-        margin-top: 20px;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        align-self: center;
-
-    }
 
     #a1scritta{
         max-width: 300px;
@@ -99,31 +114,24 @@ a:link {
 
     }
 
+
     #a2scritta{
         padding-top: 15px;
-        padding-left: 15px;
+        padding-left: 5px;
         padding-right: 10px;
-        margin-right: 50px;
-        margin-left: 10px;
+        margin-right: 90px;
+        margin-left: -10px;
         margin-top: -50px;
     }
 
 
-    #img3{
-        width: 350px;
-        margin-top: 20px;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        align-self: center;
-
-    }
 
     #a3scritta{
         padding-top: 15px;
-        padding-left: 15px;
+        padding-left: 5px;
         padding-right: 10px;
-        margin-right: 50px;
-        margin-left: 10px;
+        margin-right: 90px;
+        margin-left: -10px;
         margin-top: -50px;
     }
     #a4{
@@ -145,11 +153,11 @@ a:link {
         max-width: 400px;
     }
     .wrtc{
-        margin-top: -170px;
-        margin-left: 170px;
+        margin-top: -100px;
+        margin-left: 110px;
         padding-left: 30px;
-        padding-right: 120px;
-        padding-top: 10px;
+        padding-right: 30px;
+        padding-top: 20px;
         padding-bottom: 10px;
         background-color: white;
     }
